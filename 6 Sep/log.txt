@@ -1,0 +1,117 @@
+5+5/5
+6
+(5+5)/5
+2
+7 && 5
+5
+8-8 && 7-5
+0
+'' && 9-5
+""
+7 || 5
+7
+8-8 || 7-5
+2
+'' || 9-5
+4
+! ''
+true
+!7
+false
+7 ? 5 : 3
+5
+9-9?5*5:3-7
+-4
+x=10+5
+15
+x
+15
+x
+15
+a=(b=1)+(c=2)
+3
+a
+3
+b
+1
+c
+2
+alert(5+6)
+undefined
+7+9
+16
+confirm('hello')
+true
+confirm('hello')
+false
+confirm('hello')
+false
+confirm('hello')
+false
+confirm('Is your age greater than 18')?alert('Adult'):alert('teen')
+undefined
+confirm('Is your age greater than 18')?alert('Adult'):alert('teen')
+undefined
+answer=confirm('Is your age greater than 18')?'Adult':'teen'
+"Adult"
+answer
+"Adult"
+prompt('Enter something')
+null
+prompt('Enter something')
+""
+prompt('Enter something')
+"dsfd"
+prompt('Enter something')
+"120"
+a=prompt("Enter something")
+"120"
+a
+"120"
+a
+"120"
+parseInt(a)
+120
+a=parseInt(prompt("Enter something"))
+120
+a=parseInt(prompt("Enter something"))
+520
+b=parseInt(prompt("Enter something"))
+600
+a
+520
+b
+600
+a+b
+1120
+parseInt("50.65")
+50
+parseFloat("50.65")
+50.65
+parseInt("674nvjdfjkvdfdjd")
+674
+parseInt("67 4nvjdfjkvdfdjd")
+67
+parseInt("fvvfgb67 4nvjdfjkvdfdjd")
+NaN
+parseFloat("83478.42374fjdvjhf")
+83478.42374
+parseFloat("ffjdvfd83478.42374fjdvjhf")
+NaN
+parseFloat("83 478.42374fjdvjhf")
+83
+console.log('hello')
+VM702:1 hello
+undefined
+Math.pow(45,2)
+2025
+Math.pow(5,2)
+25
+Math.sqrt(5)
+2.23606797749979
+Math.sin(3.14/2)
+0.9999996829318346
+Math.PI
+3.141592653589793
+Math.sin(Math.PI/2)
+1
