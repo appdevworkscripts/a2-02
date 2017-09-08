@@ -1,0 +1,48 @@
+<script>
+arr=[1,3,4,2,6];
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+
+square=function(a){
+    return a*a;
+}
+
+test=function(a){
+    return a(0)+a(1)+a(-1);
+}
+
+test(square);
+
+
+counter = function(){
+    x=0;
+    return function(){
+        x++;
+        return x;
+    }
+}
+
+counter2 = function(){
+    var x=0;
+    return function(){
+        x++;
+        return x;
+    }
+}
+test2=function(){
+    y=10;
+    if(y>=10){
+        var p=20
+    }
+    console.log(p);
+}
+test3=function(){
+    y=10;
+    if(y>=10){
+        let p=20
+    }
+    console.log(p);
+}
+
+</script>
