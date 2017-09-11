@@ -1,0 +1,25 @@
+<script>
+    var obj={
+        a:1,
+        'b-c':'hello',
+        c:function(){
+
+        },
+        'd':[3,6,7],
+        'e':{
+            'x':100,
+            y:800
+        }
+    }
+    console.log(obj['b-c']);
+    console.log(obj['a'])
+    console.log(obj.a,obj.x)
+    obj.a=900; //modification
+    obj.x=200; // adding new key
+    delete obj.d; 
+    console.log('e' in obj); //true
+    console.log('f' in obj); //false
+
+
+    console.log(obj)
+</script>
