@@ -1,0 +1,20 @@
+<script>
+    //npm install -g typescript
+    var Car = (function () {
+        function Car(model, price) {
+            this.model = model;
+            this.price = price;
+        }
+        Car.prototype.showCar = function () {
+            console.log("Model " + this.model + " - Price " + this.price);
+        };
+        return Car;
+    }());
+
+    
+
+
+    var c1=new Car("BMW",40000);
+    console.log(c1)
+    c1.showCar();
+</script>
