@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+       System.config({
+           baseURL:"./build/",
+           packages:{
+                "/":{
+                    defaultExtention:"js",
+                    main:"person"
+                }
+           }
+       });
+       System.import("person").then(function(m){
+            var p=new m.Person("Hello",67)
+            p.showPerson();
+            p.driveCar()
+       },function(){    
+            console.log('Error in loading Module');
+       })
+    </script>
+</body>
+
+</html>

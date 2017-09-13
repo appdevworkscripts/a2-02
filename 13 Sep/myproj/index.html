@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        //npm install -g http-server
+        System.import("build/person.js")
+        setTimeout(function(){
+            System.import("build/car.js")
+        },15000)
+    </script>
+</body>
+
+</html>
