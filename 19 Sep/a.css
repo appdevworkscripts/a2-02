@@ -1,0 +1,12 @@
+ul>li{
+    color:blue;
+}
+ul{
+    list-style-image: url('img.jpg');
+}
+ol>li{
+    color: red;
+}
+ol span{
+    color:black;
+}
