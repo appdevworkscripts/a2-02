@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        .myclass{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="x">Hello</p>
+    <p id="y">Bye</p>
+    <script>
+        var x=document.querySelector("#x");  //Element
+        setTimeout(function(){
+            x.innerHTML="New Data<strong>Data</strong>"
+            x.setAttribute("class","myclass");
+        },3000);
+        
+    </script>
+</body>
+
+</html>
