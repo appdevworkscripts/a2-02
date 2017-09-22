@@ -1,0 +1,15 @@
+<div>
+    Hiii This is employee component {{text}}.
+    <br >
+    <input value="{{val}}"><br />
+    <input [value]="val" (blur)="setText()">
+    <input [attr.type]="mytype" (focus)="setText()">
+    <p [innerHTML]="text | capitalize" [attr.x]='"blue"'></p>
+    <span (click)="val=90" [style.color]="'blue'">Click me</span>
+
+    <br />
+    <br />
+    <input [(ngModel)]="myNewModel">
+    <br />
+    {{myNewModel}}
+</div>
