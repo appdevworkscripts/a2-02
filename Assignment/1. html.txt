@@ -1,0 +1,4 @@
+Assignments
+
+1. Create your resume in html format. Try to use all kinds of html tags.
+2. Create a form for getting input of a students marks and other details. This form behaves as a raw data for generating dynamic report cards.

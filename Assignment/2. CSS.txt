@@ -1,0 +1,7 @@
+CSS Assignments
+1. Create a Report Card design using CSS and bootstrap. Report card should be in printable format.
+2. Create design for visiting card containing following details
+	a) Name of person
+	b) Contact Address
+	c) Phone Number
+	d) Email Id
