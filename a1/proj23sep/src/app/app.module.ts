@@ -9,12 +9,15 @@ import {ProfileComponent} from './views/profile.component';
 import {DishComponent} from './views/dish.component';
 import {DishDetailComponent} from './dish-detail/dish-detail.component';
 import {RouterModule} from '@angular/router';
+import {DishFormComponent} from './views/dish-form.component';
+import {FormsModule} from '@angular/forms';
+import {DishService} from './services/dish.service';
 @NgModule({
   declarations: [
-    AppComponent,HeaderComponent,FooterComponent,ProfileComponent,HomeComponent,DishComponent,DishDetailComponent
+    AppComponent,HeaderComponent,FooterComponent,ProfileComponent,HomeComponent,DishComponent,DishDetailComponent,DishFormComponent
   ],
   imports: [
-    BrowserModule,RouterModule.forRoot([{
+    BrowserModule,FormsModule,RouterModule.forRoot([{
       path:"home",
       component:HomeComponent
     },{
@@ -23,9 +26,12 @@ import {RouterModule} from '@angular/router';
     },{
       path:'dish',
       component:DishComponent
+    },{
+      path:'dishform',
+      component:DishFormComponent
     }])
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
