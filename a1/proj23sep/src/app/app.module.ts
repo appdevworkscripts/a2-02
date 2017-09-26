@@ -12,12 +12,13 @@ import {RouterModule} from '@angular/router';
 import {DishFormComponent} from './views/dish-form.component';
 import {FormsModule} from '@angular/forms';
 import {DishService} from './services/dish.service';
+import {HttpModule} from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent,HeaderComponent,FooterComponent,ProfileComponent,HomeComponent,DishComponent,DishDetailComponent,DishFormComponent
   ],
   imports: [
-    BrowserModule,FormsModule,RouterModule.forRoot([{
+    BrowserModule,FormsModule,HttpModule,RouterModule.forRoot([{
       path:"home",
       component:HomeComponent
     },{

@@ -1,19 +1,36 @@
 <div class="container">
-    <form  (ngSubmit)="submitForm()">
+    <form #myform="ngForm" (ngSubmit)="myform.form.valid && submitForm()">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="form-group">
                     <label>Name</label>
-                    <input name="name" class="form-control" [(ngModel)]="dish.name" required>
+                    <input #name="ngModel" name="name" class="form-control" [(ngModel)]="dish.name" required minlength="4">
+                    <div *ngIf="name.errors && name.touched">
+                        <span class="help-block" *ngIf="name.errors.required">Dish name should be entered.</span>
+                        <span class="help-block" *ngIf="name.errors.minlength">Dish name should contatin atleast 4 charachters.</span>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Price</label>
-                    <input name="price" class="form-control" type="number" [(ngModel)]="dish.price" required>
+                    <input #price="ngModel" name="price" class="form-control" type="number" [(ngModel)]="dish.price" required min="10" max="1000">
+                    
+                    <div *ngIf="price.errors && price.touched">
+                        <span class="help-block" *ngIf="price.errors.required">Dish price must be entered.</span>
+                        <span class="help-block" *ngIf="price.errors.min">Dish price must be greater than 10.</span>
+                        <span class="help-block" *ngIf="price.errors.max">Dish price must be less than 1000.</span>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Url</label>
-                    <input name="url" class="form-control" [(ngModel)]="dish.url" required>
+                    <input #url="ngModel" name="url" class="form-control" [(ngModel)]="dish.url" required pattern="^[h][t][t][p][:].*">
+                    <div *ngIf="url.errors && url.touched">
+                        <span class="help-block" *ngIf="url.errors.required">Url must be entered.</span>
+                        <span class="help-block" *ngIf="url.errors.pattern">Url is not in correct format</span>
+                    </div>
                 </div>
+                <!--
+                <button class="btn btn-primary" [disabled]="myform.form.invalid">Submit</button>
+                -->
                 <button class="btn btn-primary">Submit</button>
             </div>
         </div>

@@ -5,7 +5,8 @@ import {DishService} from '../services/dish.service'
 import {Router} from '@angular/router'
 @Component({
     templateUrl:'./dish-form.component.html',
-    selector:'app-dish-form'
+    selector:'app-dish-form',
+    styleUrls:['./form.css']
 })
 export class DishFormComponent{
     dish:Dish;
