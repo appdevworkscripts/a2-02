@@ -1,0 +1,7 @@
+<form #myForm="ngForm" (ngSubmit)="submitForm()">
+        Name : <input name="name" #name="ngModel" type="text" [(ngModel)]="contact.name"> <br />
+        Address : <input name="address" #address="ngModel" type="text" [(ngModel)]="contact.address"> <br />
+        Phone : <input name="phno"  #phno="ngModel" type="text" [(ngModel)]="contact.phno"> <br />
+        Email : <input name="email" #email="ngModel" type="text" [(ngModel)]="contact.email"> <br />
+        <button [disabled]="myForm.form.invalid">Submit</button>
+</form>

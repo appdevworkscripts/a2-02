@@ -1,4 +1,5 @@
-Contacts Page
+Contacts Page<br />
+<a routerLink="/newcontact" >Create New Contact</a> <br />
 <div *ngFor="let c of contacts" >
-    <a routerLink="/contact/{{c._id}}" >{{c.name}} - {{c.phno}}</a>
+    <a routerLink="/contact/{{c._id}}" zoom >{{c.name}} - {{c.phno}}</a>
 </div>
