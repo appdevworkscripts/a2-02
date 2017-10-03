@@ -11,7 +11,12 @@ import 'rxjs/add/operator/delay';
     providers: [ContactService]
 })
 export class ContactComponent {
-    contact = {};
+    contact = {
+        name:'',
+        phno:'',
+        email:'',
+        address:''
+    };
     constructor(private route: ActivatedRoute, private contactService: ContactService) {
 
         /*

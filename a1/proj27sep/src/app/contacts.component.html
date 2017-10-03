@@ -1,5 +1,11 @@
 Contacts Page<br />
 <a routerLink="/newcontact" >Create New Contact</a> <br />
-<div *ngFor="let c of contacts" >
+<br />
+<br />
+<filter-contact (changeInFilter)="recive($event)"></filter-contact>
+
+<br />
+<br />
+<div *ngFor="let c of displayedContacts" >
     <a routerLink="/contact/{{c._id}}" zoom >{{c.name}} - {{c.phno}}</a>
 </div>

@@ -1,0 +1,9 @@
+<form>
+    <br />
+    <br />
+    <input type="text" [(ngModel)]="mytext" name="mytext">
+    <br />
+    <app-test [myvar]="mytext" *ngIf="mytext!=''"></app-test>
+    <br />
+    <button>Submit</button>
+</form>
